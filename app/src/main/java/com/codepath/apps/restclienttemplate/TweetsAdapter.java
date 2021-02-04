@@ -69,6 +69,7 @@ public class TweetsAdapter extends RecyclerView.Adapter<TweetsAdapter.ViewHolder
         TextView tvBody;
         TextView tvScreenName;
         TextView tvDate;
+        TextView tvUsername;
 
         //itemView is row of recyclerview
         public ViewHolder(@NonNull View itemView) {
@@ -77,13 +78,15 @@ public class TweetsAdapter extends RecyclerView.Adapter<TweetsAdapter.ViewHolder
             tvBody = itemView.findViewById(R.id.tvBody);
             tvScreenName = itemView.findViewById(R.id.tvScreenName);
             tvDate = itemView.findViewById(R.id.tvDate);
+            tvUsername = itemView.findViewById(R.id.tvUsername);
         }
 
         public void bind(Tweet tweet) {
             tvBody.setText(tweet.body);
-            tvScreenName.setText(tweet.user.screenName);
-            Glide.with(context).load(tweet.user.profileImageUrl).placeholder(R.drawable.loading).into(ivProfileImage);
-            tvDate.setText(tweet.getFormattedTimestamp(tweet.createdAt));
+            tvScreenName.setText("@" + tweet.user.screenName);
+            Glide.with(context).load(tweet.user.profileImageUrl).placeholder(R.drawable.loading).circleCrop().into(ivProfileImage);
+            tvDate.setText(Tweet.getFormattedTimestamp(tweet.createdAt));
+            tvUsername.setText(tweet.user.username);
         }
     }
 }
