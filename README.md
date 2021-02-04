@@ -35,7 +35,8 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='SimpleTweet_Part2_app_walkthrough.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />  <img src='SimpleTweet_Part2_app_walkthrough2.gif' title='Video Walkthrough Offline Mode' width='' alt='Video Walkthrough' />
+<img src='SimpleTweet_Part2_app_walkthrough.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />  <img src='SimpleTweet_Part2_app_walkthrough2.gif' title='Video Walkthrough Offline Mode' width='' alt='Video Walkthrough' /> <img src='SimpleTweet_Part2_app_walkthrough3.gif' title='Video Walkthrough Offline Mode' width='' alt='Video Walkthrough' /> 
+
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
